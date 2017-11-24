@@ -6,8 +6,6 @@ using MovementEffects;
 
 
 /// <summary>
-///  Unity StartCoroutine 最少有 32b 的 GC ，而且会叠加 
-///     用  Timing.RunCoroutine
 /// </summary>
 public class MECTimingTest : MonoBehaviour {
 
