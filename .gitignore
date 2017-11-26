@@ -6,3 +6,12 @@ U_Utility.Editor.csproj
 U_Utility.sln
 .vs/U_Utility/v14/.suo
 U_Utility.userprefs
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp.csproj
+obj/Debug/Assembly-CSharp.dll
+obj/Debug/Assembly-CSharp.csproj.FileListAbsolute.txt
+U_Utility.v12.suo
+obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+obj/Debug/Assembly-CSharp.csprojResolveAssemblyReference.cache
+obj/Debug/Assembly-CSharp.pdb
+ProjectSettings/ProjectVersion.txt
