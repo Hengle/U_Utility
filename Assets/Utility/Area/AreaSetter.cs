@@ -48,14 +48,14 @@ public class AreaSetter : MonoBehaviour {
     Transform[] rects;
     //======debug obj===========
     Transform _arcTrans;
-    Transform arcTrans { get { if (_arcTrans == null) _arcTrans = transform.FindChild("Arc"); return _arcTrans; } }
+    Transform arcTrans { get { if (_arcTrans == null) _arcTrans = transform.Find("Arc"); return _arcTrans; } }
     Transform _rectTrans;
-    Transform rectTrans { get { if (_rectTrans == null) _rectTrans = transform.FindChild("Rect"); return _rectTrans; } }
+    Transform rectTrans { get { if (_rectTrans == null) _rectTrans = transform.Find("Rect"); return _rectTrans; } }
     Transform _debugL;
     Transform _debugR;
 
-    Transform debugLeft { get { if (_debugL == null) _debugL = transform.FindChild("_debugL"); _debugL.transform.parent = transform; return _debugL; } }
-    Transform debugRight { get { if (_debugR == null) _debugR = transform.FindChild("_debugR"); _debugR.transform.parent = transform; return _debugR; } }
+    Transform debugLeft { get { if (_debugL == null) _debugL = transform.Find("_debugL"); _debugL.transform.parent = transform; return _debugL; } }
+    Transform debugRight { get { if (_debugR == null) _debugR = transform.Find("_debugR"); _debugR.transform.parent = transform; return _debugR; } }
 
     public bool ChechIsInside(AreaCollider t)
     {   
@@ -88,10 +88,10 @@ public class AreaSetter : MonoBehaviour {
 
     private void InitRectTrans()
     {
-        if (!rectL) rectL = transform.FindChild("l");
-        if (!rectR) rectR = transform.FindChild("r");
-        if (!rectLF) rectLF = transform.FindChild("lf");
-        if (!rectRF) rectRF = transform.FindChild("rf");
+        if (!rectL) rectL = transform.Find("l");
+        if (!rectR) rectR = transform.Find("r");
+        if (!rectLF) rectLF = transform.Find("lf");
+        if (!rectRF) rectRF = transform.Find("rf");
     }   
 
     private void OnDrawGizmos()
