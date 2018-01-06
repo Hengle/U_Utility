@@ -1,7 +1,6 @@
 ﻿using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
-
 public class RandomSmoke : MonoBehaviour
 {
     private Material mtrl;
@@ -11,7 +10,8 @@ public class RandomSmoke : MonoBehaviour
     //private Action<float> onUpdate;
     bool goFade = false;
     void Awake()
-    {   
+    {
+        
         if (rendererComp == null)
             rendererComp = GetComponent<Renderer>();
         if (rendererComp == null)
