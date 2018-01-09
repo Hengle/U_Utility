@@ -115,7 +115,7 @@ public class AreaSetter : MonoBehaviour {
     }
 
     //=============   Edit Func ==================
-
+    [ContextMenu("RandomizeParam")]
     private void RandomizeParam()
     {   
         AreaParam = new AreaParam(true);
@@ -150,9 +150,4 @@ public class AreaSetter : MonoBehaviour {
 
     }
 
-    [ContextMenu("Save Data To SObj")]
-    public void SaveDataToSObj()
-    {   
-        Debug.LogError("Save Data To SObj");
-    }   
 }

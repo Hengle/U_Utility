@@ -13,9 +13,9 @@ public class NewBehaviourScript : MonoBehaviour {
     }
 
 
-	void Update () {
-
-        //if (mAreaSetter.ChechIsInside(target))
-        //    Debug.LogError(" inside");
+    void Update()
+    {
+        if (mAreaSetter.ChechIsInside(target))
+            Debug.LogError(" inside");
     }
 }
